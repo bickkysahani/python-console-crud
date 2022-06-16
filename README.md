@@ -13,3 +13,16 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
+# Screenshots of the project
+
+<img src="screenshots\console1.PNG">
+<br>
+<br>
+<img src="screenshots\console2.PNG">
+<br>
+<br>
+<img src="screenshots\console3.PNG">
+<br>
+<br>
+<img src="screenshots\console4.PNG">

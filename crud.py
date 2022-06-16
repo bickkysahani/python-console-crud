@@ -18,11 +18,16 @@ class CRUD:
         #check if user already exists
         self.c.execute("SELECT * FROM USERS WHERE email=?", (email,))
         if self.c.fetchone():
-            print("Account already exists")
+            print('-'*40)
+            print("Account already exists !!!")
+            print('-'*40)
         else:
             self.c.execute("INSERT INTO USERS (name, email) VALUES (?, ?)", (name, email))
             self.db.commit()
+            print('-'*40)
             print("Account created successfully")
+            print('-'*40)
+          
     def read(self):
         self.c.execute("SELECT * FROM USERS")
         #display all users in a table
@@ -38,11 +43,15 @@ class CRUD:
     def update(self, id, name, email):
         self.c.execute("UPDATE USERS SET name=?, email=? WHERE id=?", (name, email, id))
         self.db.commit()
+        print('-'*40)
         print("Account updated successfully")
+        print('-'*40)
     def delete(self, id):
         self.c.execute("DELETE FROM USERS WHERE id=?", (id,))
         self.db.commit()
+        print('-'*40)
         print("Account deleted successfully")
+        print('-'*40)
     def close(self):
         self.db.close()
 
@@ -64,11 +73,15 @@ class Registration:
         #check if user already registered for that program
         self.c.execute("SELECT * FROM REGISTRATION WHERE email=? AND program=?", (email, program))
         if self.c.fetchone():
+            print('-'*40)
             print("User already registered for that program")
+            print('-'*40)
         else:
             self.c.execute("INSERT INTO REGISTRATION (name, email, program) VALUES (?, ?, ?)", (name, email, program))
             self.db.commit()
+            print('-'*40)
             print(name, " successfully registered for program ", program)
+            print('-'*40)
     def read(self):
         #display all registered users in a table
         print("ID\t\tName\t\tEmail\t\tProgram")
@@ -80,11 +93,15 @@ class Registration:
     def update(self, id, program):
         self.c.execute("UPDATE REGISTRATION SET program=? WHERE id=?", (program, id))
         self.db.commit()
+        print('-'*40)
         print("User Registered Program updated successfully")
+        print('-'*40)
 
     def delete(self, id):
         self.c.execute("DELETE FROM REGISTRATION WHERE id=?", (id,))
         self.db.commit()
+        print('-'*40)
         print("User Registration deleted successfully")
+        print('-'*40)
     def close(self):
         self.db.close()
