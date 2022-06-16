@@ -16,13 +16,16 @@ python main.py
 
 # Screenshots of the project
 
-<img src="screenshots\console1.PNG">
+<img src="screenshots\c1.PNG">
 <br>
 <br>
-<img src="screenshots\console2.PNG">
+<img src="screenshots\c2.PNG">
 <br>
 <br>
-<img src="screenshots\console3.PNG">
+<img src="screenshots\c3.PNG">
 <br>
 <br>
-<img src="screenshots\console4.PNG">
+<img src="screenshots\c4.PNG">
+<br>
+<br>
+<img src="screenshots\c5.PNG">
