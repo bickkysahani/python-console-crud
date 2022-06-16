@@ -3,7 +3,7 @@
 # How to run the application
 1. Clone the repository
 ```
-git clone 
+git clone https://github.com/bickkysahani/python-console-crud
 ```
 2. Install the dependencies
 ```
